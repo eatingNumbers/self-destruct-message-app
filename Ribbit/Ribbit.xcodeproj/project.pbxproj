@@ -20,6 +20,7 @@
 		3C1333871B65B2E300B18C60 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333811B65B2E300B18C60 /* camera@2x.png */; };
 		3C1333881B65B2E300B18C60 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333821B65B2E300B18C60 /* friends@2x.png */; };
 		3C1333891B65B2E300B18C60 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333831B65B2E300B18C60 /* inbox@2x.png */; };
+		3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		3C1333811B65B2E300B18C60 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
 		3C1333821B65B2E300B18C60 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
 		3C1333831B65B2E300B18C60 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxTableViewController.h; sourceTree = "<group>"; };
+		3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				3C13335B1B65AFC700B18C60 /* AppDelegate.m */,
 				3C13335D1B65AFC700B18C60 /* ViewController.h */,
 				3C13335E1B65AFC700B18C60 /* ViewController.m */,
+				3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */,
+				3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */,
 				3C1333601B65AFC700B18C60 /* Main.storyboard */,
 				3C1333631B65AFC700B18C60 /* Images.xcassets */,
 				3C1333651B65AFC700B18C60 /* LaunchScreen.xib */,
@@ -251,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */,
 				3C13335F1B65AFC700B18C60 /* ViewController.m in Sources */,
 				3C13335C1B65AFC700B18C60 /* AppDelegate.m in Sources */,
 				3C1333591B65AFC700B18C60 /* main.m in Sources */,

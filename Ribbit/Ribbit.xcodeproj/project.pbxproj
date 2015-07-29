@@ -37,6 +37,8 @@
 		3CDCF4151B68752400ADCFFF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF4141B68752400ADCFFF /* SystemConfiguration.framework */; };
 		3CDCF4171B68753000ADCFFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF4161B68753000ADCFFF /* libz.dylib */; };
 		3CDCF4191B68753D00ADCFFF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF4181B68753D00ADCFFF /* libsqlite3.dylib */; };
+		3CDCF41C1B687D6600ADCFFF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCF41B1B687D6600ADCFFF /* LoginViewController.m */; };
+		3CDCF41F1B687D7E00ADCFFF /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCF41E1B687D7E00ADCFFF /* SignupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,10 @@
 		3CDCF4141B68752400ADCFFF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3CDCF4161B68753000ADCFFF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3CDCF4181B68753D00ADCFFF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CDCF41A1B687D6600ADCFFF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3CDCF41B1B687D6600ADCFFF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3CDCF41D1B687D7E00ADCFFF /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		3CDCF41E1B687D7E00ADCFFF /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +132,6 @@
 		3C13334A1B65AFC700B18C60 = {
 			isa = PBXGroup;
 			children = (
-				3C13338A1B65B2EB00B18C60 /* images */,
 				3C1333551B65AFC700B18C60 /* Ribbit */,
 				3C13336F1B65AFC700B18C60 /* RibbitTests */,
 				3C1333541B65AFC700B18C60 /* Products */,
@@ -152,6 +157,10 @@
 				3C13335E1B65AFC700B18C60 /* ViewController.m */,
 				3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */,
 				3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */,
+				3CDCF41A1B687D6600ADCFFF /* LoginViewController.h */,
+				3CDCF41B1B687D6600ADCFFF /* LoginViewController.m */,
+				3CDCF41D1B687D7E00ADCFFF /* SignupViewController.h */,
+				3CDCF41E1B687D7E00ADCFFF /* SignupViewController.m */,
 				3C1333601B65AFC700B18C60 /* Main.storyboard */,
 				3C1333631B65AFC700B18C60 /* Images.xcassets */,
 				3C1333651B65AFC700B18C60 /* LaunchScreen.xib */,
@@ -163,6 +172,7 @@
 		3C1333561B65AFC700B18C60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C13338A1B65B2EB00B18C60 /* images */,
 				3C1333571B65AFC700B18C60 /* Info.plist */,
 				3C1333581B65AFC700B18C60 /* main.m */,
 			);
@@ -197,6 +207,7 @@
 				3C1333831B65B2E300B18C60 /* inbox@2x.png */,
 			);
 			name = images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3CDCF3F91B68744700ADCFFF /* Frameworks */ = {
@@ -329,10 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDCF41F1B687D7E00ADCFFF /* SignupViewController.m in Sources */,
 				3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */,
 				3C13335F1B65AFC700B18C60 /* ViewController.m in Sources */,
 				3C13335C1B65AFC700B18C60 /* AppDelegate.m in Sources */,
 				3C1333591B65AFC700B18C60 /* main.m in Sources */,
+				3CDCF41C1B687D6600ADCFFF /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

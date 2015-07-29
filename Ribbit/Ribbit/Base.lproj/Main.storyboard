@@ -7,7 +7,7 @@
         <!--Ribbit-->
         <scene sceneID="TcK-Bt-toR">
             <objects>
-                <viewController title="Ribbit" id="bVI-U8-hiM" sceneMemberID="viewController">
+                <viewController title="Ribbit" id="bVI-U8-hiM" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIP-dq-8vd"/>
                         <viewControllerLayoutGuide type="bottom" id="qab-M6-gcC"/>
@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="343" y="953"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="oHv-t5-6qE">
             <objects>
-                <viewController id="xC8-nD-ztd" sceneMemberID="viewController">
+                <viewController id="xC8-nD-ztd" customClass="SignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZT-fc-mve"/>
                         <viewControllerLayoutGuide type="bottom" id="Ip2-6v-VWN"/>

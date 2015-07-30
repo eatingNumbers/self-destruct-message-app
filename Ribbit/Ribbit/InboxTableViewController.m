@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"%@", currentUser.username);
+    } else
     
     [self performSegueWithIdentifier:@"showLogin" sender:self];
     
@@ -47,9 +51,19 @@
     return 0;
 }
 
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showLogin"])
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:; forIndexPath:indexPath];
     
     // Configure the cell...
     
@@ -100,5 +114,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

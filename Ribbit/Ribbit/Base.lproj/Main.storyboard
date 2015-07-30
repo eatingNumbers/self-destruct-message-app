@@ -31,6 +31,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="bVI-U8-hiM" eventType="touchUpInside" id="gB6-fI-dqc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9Z-IZ-AcJ">
                                 <rect key="frame" x="16" y="186" width="443" height="21"/>
@@ -52,6 +55,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="zaS-3Z-Vy8" id="mKe-6G-2d9"/>
+                        <outlet property="usernameField" destination="fuS-1y-q6Z" id="2ic-KT-L21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pib-Y0-Fvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +85,13 @@
                             <outlet property="delegate" destination="LiE-ue-AVT" id="YAg-XN-D2e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Ribbit" id="Il7-wG-vfu"/>
+                    <navigationItem key="navigationItem" title="Ribbit" id="Il7-wG-vfu">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="91M-Pv-oxF">
+                            <connections>
+                                <action selector="logout:" destination="LiE-ue-AVT" id="CJT-X4-qUH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="bVI-U8-hiM" kind="show" identifier="showLogin" id="ZKu-cj-EEt"/>
                     </connections>

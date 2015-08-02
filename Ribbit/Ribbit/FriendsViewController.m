@@ -1,81 +1,57 @@
 //
-//  EditFriendsTableViewController.m
+//  FriendsViewController.m
 //  Ribbit
 //
-//  Created by Dean Laurea on 7/31/15.
+//  Created by Dean Laurea on 8/2/15.
 //  Copyright (c) 2015 Dean Laurea. All rights reserved.
 //
 
-#import "EditFriendsTableViewController.h"
+#import "FriendsViewController.h"
 
-
-@interface EditFriendsTableViewController ()
+@interface FriendsViewController ()
 
 @end
 
-@implementation EditFriendsTableViewController
+@implementation FriendsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PFQuery *query = [PFUser query];
-    [query orderByAscending:@"username"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     
-        if (error) {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-      
-        } else {
-            self.allUsers = objects;
-            [self.tableView reloadData];
-        }
-    }];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-    self.currentUser = [PFUser currentUser];
-    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    
-    return self.allUsers.count;
+    // Return the number of rows in the section.
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
-    cell.textLabel.text = user.username;
+    // Configure the cell...
     
     return cell;
 }
-
-- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    PFRelation *friendsRelation = [self.currentUser relationForKey:@"friendsRelation"];
-    PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
-    [friendsRelation addObject:user];
-    
-    [self.currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (error) {
-            NSLog(@"Error %@ %@", error, [error userInfo]);
-        }
-    }];
-    
-}
+*/
 
 /*
 // Override to support conditional editing of the table view.

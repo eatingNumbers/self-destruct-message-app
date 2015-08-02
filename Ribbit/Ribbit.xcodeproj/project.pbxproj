@@ -21,6 +21,7 @@
 		3C1333881B65B2E300B18C60 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333821B65B2E300B18C60 /* friends@2x.png */; };
 		3C1333891B65B2E300B18C60 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333831B65B2E300B18C60 /* inbox@2x.png */; };
 		3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */; };
+		3C235E401B6DE063003BECAE /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C235E3F1B6DE063003BECAE /* FriendsViewController.m */; };
 		3CD6C0891B6C29930068DDC2 /* EditFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6C0881B6C29930068DDC2 /* EditFriendsTableViewController.m */; };
 		3CDCF4001B68744700ADCFFF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF3FA1B68744700ADCFFF /* Bolts.framework */; };
 		3CDCF4011B68744700ADCFFF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF3FB1B68744700ADCFFF /* Parse.framework */; };
@@ -74,6 +75,8 @@
 		3C1333831B65B2E300B18C60 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxTableViewController.h; sourceTree = "<group>"; };
 		3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxTableViewController.m; sourceTree = "<group>"; };
+		3C235E3E1B6DE063003BECAE /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		3C235E3F1B6DE063003BECAE /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		3CD6C0871B6C29930068DDC2 /* EditFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsTableViewController.h; sourceTree = "<group>"; };
 		3CD6C0881B6C29930068DDC2 /* EditFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsTableViewController.m; sourceTree = "<group>"; };
 		3CDCF3FA1B68744700ADCFFF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				3C13335A1B65AFC700B18C60 /* AppDelegate.h */,
 				3C13335B1B65AFC700B18C60 /* AppDelegate.m */,
+				3C235E3E1B6DE063003BECAE /* FriendsViewController.h */,
+				3C235E3F1B6DE063003BECAE /* FriendsViewController.m */,
 				3C13335D1B65AFC700B18C60 /* ViewController.h */,
 				3C13335E1B65AFC700B18C60 /* ViewController.m */,
 				3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */,
@@ -349,6 +354,7 @@
 				3CDCF41F1B687D7E00ADCFFF /* SignupViewController.m in Sources */,
 				3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */,
 				3C13335F1B65AFC700B18C60 /* ViewController.m in Sources */,
+				3C235E401B6DE063003BECAE /* FriendsViewController.m in Sources */,
 				3C13335C1B65AFC700B18C60 /* AppDelegate.m in Sources */,
 				3C1333591B65AFC700B18C60 /* main.m in Sources */,
 				3CDCF41C1B687D6600ADCFFF /* LoginViewController.m in Sources */,

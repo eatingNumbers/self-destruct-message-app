@@ -7,6 +7,7 @@
 //
 
 #import "FriendsViewController.h"
+#import "EditFriendsTableViewController.h"
 
 @interface FriendsViewController ()
 
@@ -32,6 +33,12 @@
     }];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showEditFriends"]) {
+        EditFriendsTableViewController *viewController = (EditFriendsTableViewController *)segue.destinationViewController;
+        viewController.friends = [NSMutableArray arrayWithArray:self.friends];
+    }
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -55,6 +55,14 @@
     PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
     cell.textLabel.text = user.username;
     
+    if ([self isFriend:user]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    } else {
+        
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
 
@@ -72,9 +80,22 @@
     [self.currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
             NSLog(@"Error %@ %@", error, [error userInfo]);
+
         }
     }];
     
+}
+#pragma mark - Helper methods
+
+- (BOOL)isFriend:(PFUser *)user {
+    for (PFUser *friend in self.friends) {
+        if ([friend.objectId isEqualToString:user.objectId]) {
+                return YES;
+        }
+    }
+    
+    return NO;
+
 }
 
 /*

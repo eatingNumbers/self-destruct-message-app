@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="-1241" y="463"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="32G-sJ-EkM">
             <objects>
-                <tableViewController id="x1O-hG-HUa" sceneMemberID="viewController">
+                <tableViewController id="x1O-hG-HUa" customClass="CameraViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="09G-XA-Fjr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

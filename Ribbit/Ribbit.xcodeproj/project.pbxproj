@@ -41,6 +41,7 @@
 		3CDCF4191B68753D00ADCFFF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCF4181B68753D00ADCFFF /* libsqlite3.dylib */; };
 		3CDCF41C1B687D6600ADCFFF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCF41B1B687D6600ADCFFF /* LoginViewController.m */; };
 		3CDCF41F1B687D7E00ADCFFF /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCF41E1B687D7E00ADCFFF /* SignupViewController.m */; };
+		3CEFED761B701CFC00BFC91F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFED751B701CFC00BFC91F /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		3CDCF41B1B687D6600ADCFFF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CDCF41D1B687D7E00ADCFFF /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		3CDCF41E1B687D7E00ADCFFF /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		3CEFED741B701CFC00BFC91F /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		3CEFED751B701CFC00BFC91F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				3C13335B1B65AFC700B18C60 /* AppDelegate.m */,
 				3C235E3E1B6DE063003BECAE /* FriendsViewController.h */,
 				3C235E3F1B6DE063003BECAE /* FriendsViewController.m */,
+				3CEFED741B701CFC00BFC91F /* CameraViewController.h */,
+				3CEFED751B701CFC00BFC91F /* CameraViewController.m */,
 				3C13335D1B65AFC700B18C60 /* ViewController.h */,
 				3C13335E1B65AFC700B18C60 /* ViewController.m */,
 				3C13338B1B65CFCF00B18C60 /* InboxTableViewController.h */,
@@ -356,6 +361,7 @@
 				3C13335F1B65AFC700B18C60 /* ViewController.m in Sources */,
 				3C235E401B6DE063003BECAE /* FriendsViewController.m in Sources */,
 				3C13335C1B65AFC700B18C60 /* AppDelegate.m in Sources */,
+				3CEFED761B701CFC00BFC91F /* CameraViewController.m in Sources */,
 				3C1333591B65AFC700B18C60 /* main.m in Sources */,
 				3CDCF41C1B687D6600ADCFFF /* LoginViewController.m in Sources */,
 			);

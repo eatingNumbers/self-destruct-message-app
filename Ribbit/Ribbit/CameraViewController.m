@@ -25,7 +25,7 @@
 - (void)viewWillAppear:(BOOL)animated {
 
     [super viewWillAppear:animated];
-    
+
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
@@ -39,13 +39,15 @@
         }
     }];
 
-    if (self.image == nil && [self.videoFilePath length] == 0)
+    if (self.image == nil && [self.videoFilePath length] == 0) {
     
     self.imagePicker = [[UIImagePickerController alloc] init];
     self.imagePicker.delegate = self;
     self.imagePicker.allowsEditing = NO;
     self.imagePicker.videoMaximumDuration = 10; // Sets the maximum length of video being capture.
     
+    }
+        
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else {
@@ -57,7 +59,6 @@
     [self presentViewController:self.imagePicker animated:NO completion:nil];
 
 }
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

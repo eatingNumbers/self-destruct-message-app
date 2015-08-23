@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="emo-rJ-1xz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="emo-rJ-1xz">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emo-rJ-1xz" id="Gj4-Ra-8s6">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -222,7 +222,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aIU-Bw-4vi">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="aIU-Bw-4vi">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aIU-Bw-4vi" id="nZA-tQ-1xT">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -234,7 +234,18 @@
                             <outlet property="delegate" destination="x1O-hG-HUa" id="MrM-BL-Yzt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Recipients" id="ewD-rb-jRl"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="ewD-rb-jRl">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CAv-8F-vru">
+                            <connections>
+                                <action selector="Cancel:" destination="x1O-hG-HUa" id="dOj-Dp-NVp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="3UM-2O-25T">
+                            <connections>
+                                <action selector="Send:" destination="x1O-hG-HUa" id="1lB-Mb-l3z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZU-dO-VwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

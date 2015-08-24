@@ -20,4 +20,7 @@
 - (IBAction)Cancel:(id)sender;
 - (IBAction)Send:(id)sender;
 
+- (void)uploadMessage;
+- (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height;
+
 @end

@@ -39,15 +39,15 @@
         }
     }];
 
-//    if (self.image == nil && [self.videoFilePath length] == 0) {
+    if (self.image == nil && [self.videoFilePath length] == 0) {
     
     self.imagePicker = [[UIImagePickerController alloc] init];
     self.imagePicker.delegate = self;
     self.imagePicker.allowsEditing = NO;
     self.imagePicker.videoMaximumDuration = 10; // Sets the maximum length of video being capture.
     
-//    }
-    
+    }
+
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else {

@@ -7,7 +7,8 @@
 //
 
 #import "InboxTableViewController.h"
-#import <Parse/Parse.h>
+#import "ImageViewController.h"
+
 @interface InboxTableViewController ()
 
 @end
@@ -69,15 +70,11 @@
     return [self.messages count];
 }
 
+
 - (IBAction)logout:(id)sender {
     [PFUser logOut];
     [self performSegueWithIdentifier:@"showLogin" sender:self];
     
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showLogin"])
-        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -97,6 +94,29 @@
     }
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    NSString *fileType = [self.selectedMessage objectForKey:@"fileType"];
+    if ([fileType isEqualToString:@"image"]) {
+        [self performSegueWithIdentifier:@"showImage" sender:self];
+    } else {
+        
+    }
+    
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showLogin"]) {
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    
+    } else ([segue.identifier isEqualToString:@"showImage"]);
+    [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    ImageViewController *imageViewController = (ImageViewController *)segue.destinationViewController;
+    imageViewController.message = self.selectedMessage;
+    
+    }
 
 
 /*

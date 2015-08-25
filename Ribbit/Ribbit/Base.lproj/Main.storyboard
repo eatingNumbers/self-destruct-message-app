@@ -7,6 +7,32 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Image View Controller-->
+        <scene sceneID="Adr-zu-avb">
+            <objects>
+                <viewController id="UzJ-kF-fAF" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hqr-Kw-v4w"/>
+                        <viewControllerLayoutGuide type="bottom" id="gQy-4C-gc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eXK-AK-7SA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0KY-yo-nnj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0KY-yo-nnj" id="5sj-Tl-TGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWr-qR-Bfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-1024"/>
+        </scene>
         <!--Ribbit-->
         <scene sceneID="TcK-Bt-toR">
             <objects>
@@ -128,6 +154,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="bVI-U8-hiM" kind="show" identifier="showLogin" id="ZKu-cj-EEt"/>
+                        <segue destination="UzJ-kF-fAF" kind="show" identifier="showImage" id="Sby-hh-PiP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3d-hu-nQu" userLabel="First Responder" sceneMemberID="firstResponder"/>

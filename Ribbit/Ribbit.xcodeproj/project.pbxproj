@@ -22,10 +22,6 @@
 		3C1333891B65B2E300B18C60 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1333831B65B2E300B18C60 /* inbox@2x.png */; };
 		3C13338D1B65CFCF00B18C60 /* InboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13338C1B65CFCF00B18C60 /* InboxTableViewController.m */; };
 		3C235E401B6DE063003BECAE /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C235E3F1B6DE063003BECAE /* FriendsViewController.m */; };
-		3C4DEF991B8BCFB4004F8CF1 /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4DEF951B8BCFB4004F8CF1 /* icon_image.png */; };
-		3C4DEF9A1B8BCFB4004F8CF1 /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4DEF961B8BCFB4004F8CF1 /* icon_image@2x.png */; };
-		3C4DEF9B1B8BCFB4004F8CF1 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4DEF971B8BCFB4004F8CF1 /* icon_video.png */; };
-		3C4DEF9C1B8BCFB4004F8CF1 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4DEF981B8BCFB4004F8CF1 /* icon_video@2x.png */; };
 		3C4DEF9F1B8BE03D004F8CF1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DEF9E1B8BE03D004F8CF1 /* ImageViewController.m */; };
 		3C4DEFA11B8C0102004F8CF1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4DEFA01B8C0102004F8CF1 /* MediaPlayer.framework */; };
 		3C4DEFA31B8C030C004F8CF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4DEFA21B8C030C004F8CF1 /* AVFoundation.framework */; };
@@ -355,19 +351,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C4DEF9B1B8BCFB4004F8CF1 /* icon_video.png in Resources */,
 				3C1333621B65AFC700B18C60 /* Main.storyboard in Resources */,
 				3C1333671B65AFC700B18C60 /* LaunchScreen.xib in Resources */,
-				3C4DEF991B8BCFB4004F8CF1 /* icon_image.png in Resources */,
 				3C1333861B65B2E300B18C60 /* inbox.png in Resources */,
 				3C1333851B65B2E300B18C60 /* friends.png in Resources */,
 				3C1333871B65B2E300B18C60 /* camera@2x.png in Resources */,
 				3C1333841B65B2E300B18C60 /* camera.png in Resources */,
-				3C4DEF9A1B8BCFB4004F8CF1 /* icon_image@2x.png in Resources */,
 				3C1333881B65B2E300B18C60 /* friends@2x.png in Resources */,
 				3C1333641B65AFC700B18C60 /* Images.xcassets in Resources */,
 				3C1333891B65B2E300B18C60 /* inbox@2x.png in Resources */,
-				3C4DEF9C1B8BCFB4004F8CF1 /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
